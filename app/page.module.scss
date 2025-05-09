@@ -1,0 +1,16 @@
+@use "./_styles/colors" as colors;
+
+#hero {
+  width: 100%;
+  min-height: 100svh;
+  background-color: colors.$white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero_text {
+    color: colors.$black;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+}
