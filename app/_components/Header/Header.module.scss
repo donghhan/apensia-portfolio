@@ -8,10 +8,24 @@
 
   .biography_wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 
-    span {
+    span,
+    button {
+      width: fit-content;
       font-size: 1.25rem;
+    }
+  }
+
+  @include lg {
+    width: 15%;
+    min-width: 20rem;
+    height: 100svh;
+
+    .biography_wrapper {
+      flex-direction: column;
+      row-gap: 0.85em;
     }
   }
 }

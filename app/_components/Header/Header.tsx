@@ -6,7 +6,7 @@ export default function Header(): React.JSX.Element {
     <header className={styles.header}>
       <div className={styles.biography_wrapper}>
         <span>Apensia Studio</span>
-        <span>Full stack developer</span>
+        <button>About</button>
       </div>
     </header>
   );
