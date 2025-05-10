@@ -1,13 +1,21 @@
 "use client";
 import styles from "./Header.module.scss";
+import { useState } from "react";
+import AboutModal from "../AboutModal/AboutModal";
 
 export default function Header(): React.JSX.Element {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const handleModalOpen = () => setMenuOpen(true);
+
   return (
     <header className={styles.header}>
       <div className={styles.biography_wrapper}>
         <span>Apensia Studio</span>
-        <button>About</button>
+        <button onClick={handleModalOpen}>About Me</button>
       </div>
+      {menuOpen ? (
+        <AboutModal menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      ) : null}
     </header>
   );
 }
