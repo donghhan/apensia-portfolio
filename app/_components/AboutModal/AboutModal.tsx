@@ -21,14 +21,15 @@ export default function AboutModal({
         <div id={styles.bio}>
           <h1 className={styles.title}>About</h1>
           <p className={styles.text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            deserunt aspernatur molestiae commodi non nesciunt pariatur tenetur
-            repellat doloribus beatae.
+            Fullstack developer during daytime, Indie hacker during night time.
+            <br />
+            Huge interest in building a variety of apps that can benefit all
+            human beings and all over the world.
           </p>
         </div>
         <div id={styles.tech_stacks}>
           <h1 className={styles.title}>Tech Stack</h1>
-          <div>
+          <div className={styles.wrapper}>
             <div id={styles.communication}>
               <h2 className={styles.subtitle}>Communication</h2>
               <div className={styles.icons}>
