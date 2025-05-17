@@ -34,13 +34,13 @@ export default function AboutModal({
               <h2 className={styles.subtitle}>Communication</h2>
               <div className={styles.icons}>
                 <Image
-                  src="/notion.svg"
+                  src="tech_icons/notion.svg"
                   alt="notion icon"
                   width={30}
                   height={30}
                 />
                 <Image
-                  src="/slack.svg"
+                  src="tech_icons/slack.svg"
                   alt="slack icon"
                   width={30}
                   height={30}
@@ -51,49 +51,49 @@ export default function AboutModal({
               <h2 className={styles.subtitle}>Develop</h2>
               <div className={styles.icons}>
                 <Image
-                  src="/react.svg"
+                  src="tech_icons/react.svg"
                   alt="react icon"
                   width={30}
                   height={30}
                 />
                 <Image
-                  src="/nextdotjs.svg"
+                  src="tech_icons/nextdotjs.svg"
                   alt="nextjs icon"
                   width={30}
                   height={30}
                 />
                 <Image
-                  src="/typescript.svg"
+                  src="tech_icons/typescript.svg"
                   alt="typescript icon"
                   width={30}
                   height={30}
                 />
                 <Image
-                  src="/django.svg"
+                  src="tech_icons/django.svg"
                   alt="django icon"
                   width={30}
                   height={30}
                 />
                 <Image
-                  src="/express.svg"
+                  src="tech_icons/express.svg"
                   alt="express icon"
                   width={30}
                   height={30}
                 />
                 <Image
-                  src="/supabase.svg"
+                  src="tech_icons/supabase.svg"
                   alt="supabase icon"
                   width={30}
                   height={30}
                 />
                 <Image
-                  src="/postgresql.svg"
+                  src="tech_icons/postgresql.svg"
                   alt="postgresql icon"
                   width={30}
                   height={30}
                 />
                 <Image
-                  src="/mongodb.svg"
+                  src="tech_icons/mongodb.svg"
                   alt="mongodb icon"
                   width={30}
                   height={30}
@@ -104,14 +104,19 @@ export default function AboutModal({
               <h2 className={styles.subtitle}>Editor</h2>
               <div className={styles.icons}>
                 <Image
-                  src="/vegas.svg"
+                  src="tech_icons/vegas.svg"
                   alt="vegas icon"
                   width={40}
                   height={40}
                 />
-                <Image src="/gimp.svg" alt="gimp icon" width={30} height={30} />
                 <Image
-                  src="/sfm.svg"
+                  src="tech_icons/gimp.svg"
+                  alt="gimp icon"
+                  width={30}
+                  height={30}
+                />
+                <Image
+                  src="tech_icons/sfm.svg"
                   alt="sourcefilmmaker icon"
                   width={100}
                   height={30}

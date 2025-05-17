@@ -12,7 +12,11 @@ export default function Header(): React.JSX.Element {
       <div className={styles.biography_wrapper}>
         <span>Apensia Studio</span>
         <button onClick={handleModalOpen}>About Me</button>
+        <div className={styles.contact_wrapper}>
+          <span>apensia914@gmail.com</span>
+        </div>
       </div>
+
       {menuOpen ? (
         <AboutModal menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       ) : null}

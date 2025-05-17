@@ -1,31 +1,62 @@
 @use "../../_styles/index.scss" as *;
 
-#toc {
-  width: 100%;
-  height: 10svh;
-  border: 1px solid red;
-  padding: 10em 1em 0;
+.container {
+  display: flex;
+  flex-direction: column;
 
-  .content_wrapper {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.25rem;
+  #toc {
+    width: 100%;
+    padding: 10em 1.5em 0;
+    overflow-y: hidden;
 
-    .content {
+    .content_wrapper {
       display: flex;
-      column-gap: 5em;
+      flex-direction: column;
+      row-gap: 3.5em;
+      overflow-y: scroll;
+      height: 100svh;
 
-      .title {
-        display: inline-block;
-        margin-bottom: 0.5em;
-        font-size: 1.5rem;
+      .content {
+        display: flex;
+        column-gap: 5em;
+        font-size: 1.25rem;
+
+        .exp_wrapper {
+          transition: color 0.25s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 1em;
+
+          .title,
+          .summary {
+            transition: color 0.25s ease-in-out;
+          }
+
+          &:hover {
+            .title,
+            .summary {
+              color: $gray;
+              transition: color 0.25s ease-in-out;
+            }
+          }
+        }
       }
     }
   }
 
+  #preview {
+    width: 100%;
+  }
+
   @include lg {
-    width: 30svw;
-    min-width: 30rem;
-    height: 100svh;
+    flex-direction: row;
+
+    #toc {
+      width: 30svw;
+      min-width: 30rem;
+      height: 100svh;
+      padding: 1em 1em 0;
+    }
   }
 }
