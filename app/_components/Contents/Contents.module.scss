@@ -3,6 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   #toc {
     width: 100%;
@@ -14,7 +15,8 @@
       flex-direction: column;
       row-gap: 3.5em;
       overflow-y: scroll;
-      height: 100svh;
+      scrollbar-width: none;
+      height: calc(100svh - 12em);
 
       .content {
         display: flex;
@@ -46,17 +48,38 @@
   }
 
   #preview {
-    width: 100%;
+    width: 40%;
+    position: fixed;
+    right: 0;
+    top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+
+    .image_wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   @include lg {
     flex-direction: row;
 
     #toc {
-      width: 30svw;
-      min-width: 30rem;
+      width: 25svw;
       height: 100svh;
-      padding: 1em 1em 0;
+    }
+
+    #preview {
+      width: 60svw;
+      aspect-ratio: 16 / 9;
+
+      .image_wrapper {
+        width: 60%;
+        min-width: 50rem;
+      }
     }
   }
 }
