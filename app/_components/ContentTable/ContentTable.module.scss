@@ -1,0 +1,31 @@
+@use "../../_styles/index.scss" as *;
+
+#toc {
+  width: 100%;
+  height: 10svh;
+  border: 1px solid red;
+  padding: 10em 1em 0;
+
+  .content_wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+
+    .content {
+      display: flex;
+      column-gap: 5em;
+
+      .title {
+        display: inline-block;
+        margin-bottom: 0.5em;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @include lg {
+    width: 30svw;
+    min-width: 30rem;
+    height: 100svh;
+  }
+}
